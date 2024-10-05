@@ -1,0 +1,194 @@
+body {
+    background-color: hsl(257, 40%, 49%); /* Default background color */
+    background-image: url('images/bg-desktop.svg'); /* Background image for desktop */
+    background-size:  88% 100%;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: left;
+    height: 100vh; /* Sets height to 100% of the viewport */
+    overflow: hidden; /* Disables scrolling, if necessary */
+}
+
+.logo {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+
+.title {
+    font-family: "Poppins", sans-serif;
+    font-size: 285%;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    top: 28%;
+    left: 58%;
+}
+
+.description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    width: 30%;
+    font-size: 126%;
+    color: antiquewhite;
+    position: absolute;
+    top: 47%;
+    left: 58%;
+}
+
+.register-btn {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-size: 112%;
+    text-align: center;
+    font-weight: 500;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    border-radius: 32px;
+    border: none;
+    padding: 0.9% 3.6% 0.7%;
+    cursor: pointer;
+    top: 62%;
+    left: 58%;
+    box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.1); /* Adds shadow around the button */
+}
+
+.register-btn:hover, .register-btn:active {
+    background-color: hsl(300, 69%, 71%); /* Changes button background color on hover/click */
+    color: white;
+}
+
+.mockups {
+    position: absolute;
+    top: 29.2%;
+    left: 10%;
+    transform: scale(1.3, 1.18); /* Scales the image */
+}
+
+.insta-btn, .face-btn, .git-btn {
+    text-decoration: none;
+    color: white; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    padding: 1px;
+    border: 2px solid white; /* Borda para criar o círculo vazado */
+    border-radius: 50%; /* Forma redonda */
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 5%; /* Tamanho do círculo em porcentagem */
+    height: 5%; /* Tamanho do círculo em porcentagem */
+    max-width: 50px; /* Limita o tamanho máximo do círculo */
+    max-height: 50px; /* Limita o tamanho máximo do círculo */
+}
+
+.insta-btn {
+    position: absolute;
+    top: 88%;
+    left: 90%;
+}
+
+.face-btn {
+    position: absolute;
+    top: 88%;
+    left: 82%;
+}
+
+.git-btn {
+    position: absolute;
+    top: 88%;
+    left: 86%;
+}
+
+.insta-btn:hover, .face-btn:hover, .git-btn:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0.2%;
+    left: 40%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80%;
+    color: rgba(194, 186, 186, 0.589);
+    text-align: center;
+}
+
+/* Media Query for mobile */
+@media (max-width: 768px) {
+    body {
+        background-image: url('images/bg-mobile.svg'); /* Background image for mobile */
+        background-size: contain; /* Adjusts the image without cropping */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-position: top; /* Aligns the image to the top */
+    }
+
+    .logo {
+        width: 34%;
+        top: 4%;
+        left: 9.2%;
+    }
+
+    .mockups {
+        position: absolute;
+        transform: scale(0.5); /* Scales the image for mobile */
+        top: 2.5%;
+        left: -30%;
+    }
+
+    .title {
+        font-size: 162%; /* Adjusts font size for mobile */
+        position: absolute;
+        top: 54%;
+        left: 19%;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .description {
+        position: absolute;
+        width: 72%; /* Adjusts width for mobile */
+        font-size: 105%; /* Adjusts font size for mobile */
+        left: 15%;
+        top: 62%;
+        text-align: center;
+        line-height: 1.7;
+    }
+
+    .register-btn {
+        position: absolute;
+        top: 83%;
+        left: 28%;
+        font-size: 90%; /* Adjusts font size for mobile */
+        padding: 2.5% 16%; /* Adjusts internal padding */
+        width: auto; /* Automatically adjusts width */
+        height: auto; /* Automatically adjusts height based on content */
+        text-align: center; /* Centers text horizontally */
+        line-height: normal; /* Ensures the text is vertically centered */
+        display: inline-block; /* Ensures padding works properly */
+        vertical-align: middle; /* Vertically aligns the text */
+    }
+
+    .attribution {
+        position: absolute;
+        left: 23%;
+        font-size: 60%; /* Adjusts font size for mobile */
+    }
+
+    .insta-btn, .face-btn, .git-btn {
+        width: 8%;
+        height: 4%;
+    }
+
+    .insta-btn {
+        left: 56%;
+        top: 90%;
+    }
+    .face-btn {
+        top: 90%;
+        left: 34%;
+    }
+    .git-btn {
+        top: 90%;
+        left: 45%;
+    }
+}
