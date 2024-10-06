@@ -47,7 +47,7 @@ body {
     border: none;
     padding: 0.9rem 4.6rem 1rem;
     cursor: pointer;
-    top: 62%;
+    top: 36rem;
     left: 60%;
     box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.1); /* Adds shadow around the button */
 }
@@ -115,6 +115,8 @@ body {
     text-align: center;
 }
 
+
+
 /* Media Query for mobile */
 @media (max-width: 768px) {
     body {
@@ -156,17 +158,11 @@ body {
     }
 
     .register-btn {
-        position: absolute;
-        top: 83%;
-        left: 28%;
-        font-size: 90%; /* Adjusts font size for mobile */
-        padding: 2.5% 16%; /* Adjusts internal padding */
-        width: auto; /* Automatically adjusts width */
-        height: auto; /* Automatically adjusts height based on content */
-        text-align: center; /* Centers text horizontally */
-        line-height: normal; /* Ensures the text is vertically centered */
-        display: inline-block; /* Ensures padding works properly */
-        vertical-align: middle; /* Vertically aligns the text */
+        left: 50%; /* Centraliza o botão */
+        top: 79%; /* Ajusta a posição vertical */
+        padding: 0.7rem 3rem; /* Reduz o tamanho do padding */
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+        transform: translateX(-50%); /* Certifica que o botão fica centralizado */
     }
 
     .attribution {
